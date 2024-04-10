@@ -1,0 +1,6 @@
+FROM ubuntu:18.04
+
+ADD sql src/sql
+ADD scripts src/scripts
+
+RUN apt-get update && apt-get install mysql-server -y
